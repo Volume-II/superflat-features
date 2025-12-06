@@ -23,11 +23,21 @@
     "depth": 0,
     "erosion": 0,
     "final_density": {
-      "type": "minecraft:y_clamped_gradient",
-      "from_y": 62,
-      "to_y": 63,
-      "from_value": 1,
-      "to_value": -1
+      "type": "minecraft:max",
+      "argument1": {
+        "type": "y_clamped_gradient",
+        "from_y": 62,
+        "to_y": 63,
+        "from_value": 1,
+        "to_value": -1
+      },
+      "argument2": {
+        "type": "y_clamped_gradient",
+        "from_y": 107,
+        "to_y": 108,
+        "from_value": -1,
+        "to_value": 1
+      }
     },
     "fluid_level_floodedness": 0,
     "fluid_level_spread": 0,
@@ -691,4 +701,5 @@
       }
     ]
   }
+
 }
